@@ -37,3 +37,6 @@ Do context specific escaping on its boundary
 <li>Pass instances of custom types (ValueObjects) from source to sink</li>
 <li>Use raw values of ValueObject only inside single context, always pass ValueObjects across the boundaries</li>
 </ul>
+<h2>Appendix</h2>
+<h3>Quod licet Iovi, non licet bovi</h3>
+<p>Throw exceptions (fail hard) for interactive input, degrade gracefully for non-interactive one</p>
