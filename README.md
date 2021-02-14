@@ -37,7 +37,7 @@ variable (method, function etc.) that is defined but which is never used.
 `Unreachable`, `unreferenced` and `dead` code can be found with static analysis ( [PHPStan](https://github.com/phpstan/phpstan), [Phan](https://github.com/phan/phan), [Psalm](https://github.com/vimeo/psalm) ). 
 `Obsolete`(dead) code can be found with dynamic analysis and [`tombstone`](https://github.com/krakjoe/tombs) concept
 
-### *Complecation*: 
+### *Complication*: 
 [The Halting problem](https://en.wikipedia.org/wiki/Halting_problem) is reducible to the problem of finding dead code. That is, if you find an algorithm that can detect dead code in any program, then you can use that algorithm to test whether any program will halt. Since that has been proven to be impossible, it follows that writing an algorithm for dead code is impossible as well.
 
 #### *WHY?*
