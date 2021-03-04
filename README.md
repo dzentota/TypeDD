@@ -88,3 +88,7 @@ This is needed to not have to do validation again here and there or blindly assu
 ## Appendix
 ### Quod licet Iovi, non licet bovi
 Throw exceptions (fail hard) for interactive input, degrade gracefully for non-interactive one
+
+### Chinglish is not English
+In multi-tier software ensure that every tier parses input identically. (See **HTTP request smuggling**, **HTTP Parameter Pollution**)
+
