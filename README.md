@@ -49,10 +49,12 @@ During the summer of 2012, Knight Capital Group caused a major stock market disr
 
 ## Rule #1
 ### The Lord of the Sinks
-Do context-specific escaping on context boundary
+Do context-specific escaping on context boundary. 
+Caution is the parent of safety:
+
 #### TODO
 - escape data as close to the sink as possible.
-- escape any data regardless of its source, whether it's user-provided or system generated.
+- escape any data no matter if it's user-provided or system generated.
 - extract the raw value of ValueObject right before escaping
 ## Rule #2
 ### [Least Power Principle](https://en.wikipedia.org/wiki/Rule_of_least_power)
@@ -84,11 +86,22 @@ Don't forget information regarding the validity of a certain input
 ### *WHY?*
 This is needed to not have to do validation again here and there or blindly assume that validation was done before, in other words, it prevents [shotgun parsing](http://langsec.org/papers/langsec-cwes-secdev2016.pdf) problem. 
 
+## Rule #4
+### Declaration of Sources Rights
+All sources are born at the infrastructure level and should be treated equally.
+
+#### TODO
+- Apply identical parsing/validation/escaping/sanitization for the same data coming from different `sources`.
+
 ---
 ## Appendix
 ### Quod licet Iovi, non licet bovi
 Throw exceptions (fail hard) for interactive input, degrade gracefully for non-interactive one
 
 ### Chinglish is not English
+*Avoid ambiguity*
+
 In multi-tier software ensure that every tier parses input identically. (See **HTTP request smuggling**, **HTTP Parameter Pollution**)
 
+### A word spoken is past recalling
+Use read-once ValueObjects for sensitive data. Its main purpose is to facilitate detection of unintentional use.
