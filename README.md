@@ -57,7 +57,7 @@ Caution is the parent of safety:
 - escape any data no matter if it's user-provided or system generated.
 - extract the raw value of ValueObject right before escaping
 ## Rule #2
-### [Least Power Principle](https://en.wikipedia.org/wiki/Rule_of_least_power)
+### [Least (Computational) Power Principle](https://en.wikipedia.org/wiki/Fail-fast)
 Access to computational power is a privilege
 
 - [`Parse`, don't `validate`](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/ ) input data as close to the `source` as possible
