@@ -88,7 +88,7 @@ This is needed to not have to do validation again here and there or blindly assu
 
 ## Rule #4
 ### Declaration of Sources Rights
-All sources are born at the infrastructure level and should be treated equally.
+All sources are born at the same architectural level and should be treated equally.
 
 #### TODO
 - Apply identical parsing/validation/escaping/sanitization for the same data coming from different `sources`.
